@@ -7,7 +7,6 @@
     <title>Document</title>
   </head>
   <body>
-    <form name="fm1" onsubmit="return appForm()" method="post">
     <div id="dv1">
       <select name="drop1" id="d1">
         <option id="d1_op1">select Ti</option>
@@ -26,13 +25,11 @@
         <option id="d3_op1"> select cooling rate </option>
         <option id="d3_op2">-0.139</option>
       </select>
-      
-      <input type="submit" value="Try">
-    </form>
-    <div id="dv4">
-        <img id="img" src="graf1.png"/>
-      </div>
-      <script src="main.js"></script>
+      <button onclick="appForm()">try</button>
     </div>
+    <div id="dv4">
+      <img id="img" src="default.png" />
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>

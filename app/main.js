@@ -1,15 +1,15 @@
 function appForm() {
-  var ti = document.forms["fm1"]["d1"].value;
-  var tf = document.forms["fm1"]["d2"].value;
-  //var cr = document.forms["fm1"]["d3"].value;
-  var x = "foto_2.png";
-  if ((ti = "95") && (tf = "0")) {
-    //var x = "foto_2.png";
+  var ti = document.getElementById("d1").value;
+  var tf = document.getElementById("d2").value;
+  var cr = document.getElementById("d3").value;
+  console.log(ti);
+  if (ti == "95" && tf == "0" && cr == "-0.139") {
+    var x = "foto_1.png";
   } else {
-    if ((ti = "80") && (tf = "0")) {
-      //var return = "url img 2"
+    if (ti == "80" && tf == "0" && cr == "-0.139") {
+      var x = "foto_2.png";
     } else {
-      //var x = "";
+      var x = "erro.png";
     }
   }
   document.getElementById("img").src = x;
