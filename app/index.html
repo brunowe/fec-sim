@@ -7,27 +7,29 @@
     <title>Document</title>
   </head>
   <body>
-    <div>
+    <div id="dv1">
       <select name="drop1" id="d1">
-        <option>select Ti</option>
-        <option>95</option>
-        <option>100</option>
+        <option id="d1_op1">select Ti</option>
+        <option id="d1_op2">95</option>
+        <option id="d1_op3">80</option>
       </select>
     </div>
-    <div>
+    <div id="dv2">
       <select name="drop2" id="d2">
-        <option>select Tf</option>
-        <option>0</option>
+        <option id="d2_op1">select Tf</option>
+        <option id="d2_op2">0</option>
       </select>
     </div>
-    <div>
+    <div id="dv3">
       <select name="drop3" id="d3">
-        <option>select cooling rate</option>
-        <option>-0,139</option>
+        <option id="d3_op1"> select cooling rate </option>
+        <option id="d3_op2">-0.139</option>
       </select>
-      <div>
-        <img id="img" />
-      </div>
+      <button onclick="appForm()">try</button>
     </div>
+    <div id="dv4">
+      <img id="img" src="default.png" />
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
